@@ -1,5 +1,6 @@
 import cors from 'cors'
 import express from 'express'
+import { userRouter } from './router/userRouter'
 
 const app = express()
 app.use(cors())
@@ -10,6 +11,5 @@ app.listen(port, () => {
     console.log(`servidor rodando na porta ${port}`)
 })
 
-app.get("/test", (req, res) => {
-    res.send("Hello world!!")
-})
+app.use("/user", userRouter)
+

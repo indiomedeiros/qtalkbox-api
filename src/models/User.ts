@@ -8,8 +8,6 @@ export interface UserDatabaseModel {
 export interface PayloadModel {
     id: string,
     nickname: string,
-    email: string,
-    password: string
 }
 
 export class User {
