@@ -1,1 +1,1 @@
-# Zeddit
+# QTalkBox-API
