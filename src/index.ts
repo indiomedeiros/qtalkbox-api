@@ -1,6 +1,7 @@
 import cors from 'cors'
 import express from 'express'
 import { userRouter } from './router/userRouter'
+import { postRouter } from './router/postRouter'
 
 const app = express()
 app.use(cors())
@@ -12,4 +13,5 @@ app.listen(port, () => {
 })
 
 app.use("/user", userRouter)
+app.use("/post", postRouter)
 
